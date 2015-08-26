@@ -44,7 +44,7 @@ public class SupportAction {
     }
 
     public void sendFeedBack() {
-        String[] TO = {"kimcy92@gmail.com"};
+        String[] TO = {"your_email_@gmail.com"};
         Intent intentEmail = new Intent(Intent.ACTION_SEND);
         intentEmail.setData(Uri.parse("mailto:"));
         intentEmail.setType("message/rfc822");
