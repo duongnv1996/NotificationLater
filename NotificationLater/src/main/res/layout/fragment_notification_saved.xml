@@ -1,0 +1,41 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/FullSizeStyle"
+    android:background="@android:color/white">
+
+
+    <LinearLayout
+        style="@style/FullSizeStyle"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layoutWrapper"
+            style="@style/FullWidthStyle"
+            android:background="@drawable/card_no_round_thin_line_drawable"
+            android:orientation="vertical">
+
+            <customview.TextViewCustomFont
+                android:id="@+id/btnUnRead"
+                style="@style/UnReadButtonStyle" />
+        </LinearLayout>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipeRefresh"
+            style="@style/FullSizeStyle">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                style="@style/FullSizeStyle"
+                android:scrollbars="vertical" />
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        style="@style/WrapContentStyle"
+        android:layout_gravity="bottom|right|end"
+        android:layout_margin="@dimen/dimen_16dp"
+        android:src="@drawable/ic_clear_all_white_24dp" />
+
+</android.support.design.widget.CoordinatorLayout>

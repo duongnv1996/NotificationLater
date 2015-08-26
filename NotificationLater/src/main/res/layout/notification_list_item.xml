@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.kimcy929.notificationlater.ForegroundLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/FullWidthStyle"
+    android:background="@android:color/white"
+    android:foreground="?attr/selectableItemBackground"
+    android:minHeight="?attr/listPreferredItemHeightLarge"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/dimen_10dp"
+    android:paddingTop="@dimen/dimen_10dp">
+
+    <customview.TextViewCustomFont
+        android:id="@+id/alphabetIcon"
+        style="@style/WrapContentStyle"
+        android:layout_marginStart="@dimen/dimen_16dp"
+        android:background="@drawable/circle_alphabet_background"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_24sp" />
+
+    <LinearLayout
+        style="@style/FullWidthStyle"
+        android:layout_marginStart="@dimen/dimen_16dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/FullWidthStyle"
+            android:orientation="horizontal">
+
+            <customview.TextViewCustomFont
+                android:id="@+id/txtAppName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textSize="@dimen/text_size_16sp" />
+
+            <customview.TextViewCustomFont
+                android:id="@+id/txtPostTime"
+                style="@style/WrapContentStyle"
+                android:layout_marginEnd="@dimen/dimen_8dp"
+                android:gravity="right"
+                android:textColor="@color/timePostColor"
+                android:textSize="@dimen/text_size_12sp" />
+        </LinearLayout>
+
+        <customview.TextViewCustomFont
+            android:id="@+id/txtNtContentTitle"
+            style="@style/WrapContentStyle"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textSize="@dimen/text_size_14sp" />
+
+        <customview.TextViewCustomFont
+            android:id="@+id/txtNtContentText"
+            style="@style/WrapContentStyle"
+            android:layout_marginEnd="@dimen/dimen_8dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textSize="@dimen/text_size_14sp" />
+    </LinearLayout>
+</com.kimcy929.notificationlater.ForegroundLinearLayout>

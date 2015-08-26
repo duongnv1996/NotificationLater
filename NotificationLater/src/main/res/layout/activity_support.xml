@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/FullWidthStyle">
+
+    <LinearLayout
+        android:background="@drawable/card_no_round_drawable"
+        style="@style/FullWidthStyle"
+        android:orientation="vertical">
+
+        <ImageView
+            style="@style/WrapContentStyle"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/txtAppName"
+            style="@style/WrapContentStyle"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dimen_4dp"
+            android:text="@string/app_name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+        <LinearLayout
+            android:id="@+id/btnFeedback"
+            style="@style/LinearLayoutButtonStyle"
+            android:layout_marginTop="@dimen/dimen_8dp">
+
+            <customview.TintImageView
+                style="@style/ImageViewButtonStyle"
+                android:src="@drawable/ic_mail_black_24dp" />
+
+            <TextView
+                style="@style/TextViewButtonStyle"
+                android:text="@string/feedback" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnChangeLog"
+            style="@style/LinearLayoutButtonStyle">
+
+            <customview.TintImageView
+                style="@style/ImageViewButtonStyle"
+                android:src="@drawable/ic_event_note_black_24dp" />
+
+            <TextView
+                style="@style/TextViewButtonStyle"
+                android:text="@string/change_log" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnUserGuide"
+            style="@style/LinearLayoutButtonStyle">
+
+            <customview.TintImageView
+                style="@style/ImageViewButtonStyle"
+                android:src="@drawable/ic_person_black_24dp" />
+
+            <TextView
+                style="@style/TextViewButtonStyle"
+                android:text="@string/user_guide" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnVoteApp"
+            style="@style/LinearLayoutButtonStyle">
+
+            <customview.TintImageView
+                style="@style/ImageViewButtonStyle"
+                android:src="@drawable/ic_star_black_24dp" />
+
+            <TextView
+                style="@style/TextViewButtonStyle"
+                android:text="@string/rate_app" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnShareApp"
+            style="@style/LinearLayoutButtonStyle">
+
+            <customview.TintImageView
+                style="@style/ImageViewButtonStyle"
+                android:src="@drawable/ic_share_black_24dp" />
+
+            <TextView
+                style="@style/TextViewButtonStyle"
+                android:text="@string/share_app" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnMoreApp"
+            style="@style/LinearLayoutButtonStyle">
+
+            <customview.TintImageView
+                style="@style/ImageViewButtonStyle"
+                android:src="@drawable/ic_shop_black_24dp" />
+
+            <TextView
+                style="@style/TextViewButtonStyle"
+                android:text="@string/more_app" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

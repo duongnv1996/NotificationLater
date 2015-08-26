@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="alphabetOptionEntries">
+        <item name="random_color">@string/random_color</item>
+        <item name="app_icon">@string/app_icon</item>
+        <item name="not_use_alphabet_icon">@string/not_use_alphabet_icon</item>
+    </string-array>
+    <string-array name="alphabetOptionValues">
+        <item name="random_color">1</item>
+        <item name="app_icon">2</item>
+        <item name="not_use_alphabet_icon">3</item>
+    </string-array>
+
+</resources>

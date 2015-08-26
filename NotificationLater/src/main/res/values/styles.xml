@@ -1,0 +1,102 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">@color/myAccentColor</item>
+        <item name="colorPrimary">@color/myPrimaryColor</item>
+        <item name="colorPrimaryDark">@color/myPrimaryDarkColor</item>
+        <item name="windowActionModeOverlay">true</item>
+    </style>
+
+    <style name="SettingTheme" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/myAccentColor</item>
+        <item name="colorPrimary">@color/myPrimaryColor</item>
+        <item name="colorPrimaryDark">@color/myPrimaryDarkColor</item>
+    </style>
+
+    <style name="FullWidthStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="FullSizeStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="WrapContentStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="ListSelectAppStyle" parent="FullSizeStyle">
+        <item name="android:divider">@null</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:scrollbarStyle">insideOverlay</item>
+        <item name="android:dividerHeight">@dimen/dimen_8dp</item>
+        <item name="android:drawSelectorOnTop">true</item>
+    </style>
+
+    <style name="ListNotificationStyle" parent="FullSizeStyle">
+        <item name="android:scrollbars">none</item>
+        <item name="android:drawSelectorOnTop">true</item>
+    </style>
+    <!--Dialog style-->
+    <style name="MyAlertDialogAppCompatStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">@android:color/white</item>
+        <item name="colorAccent">@color/myAccentColor</item>
+        <item name="android:windowTitleStyle">@style/TitleDialogTextStyle</item>
+    </style>
+
+    <style name="TitleDialogTextStyle" parent="Base.DialogWindowTitle.AppCompat">
+        <item name="android:textColor">@color/myAccentColor</item>
+    </style>
+
+    <style name="LinearLayoutButtonStyle" parent="FullWidthStyle">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:minHeight">?attr/listPreferredItemHeightSmall</item>
+        <item name="android:background">@drawable/button_selector</item>
+    </style>
+
+    <style name="ImageViewButtonStyle" parent="WrapContentStyle">
+        <item name="android:layout_marginLeft">@dimen/dimen_16dp</item>
+    </style>
+
+    <style name="TextViewButtonStyle" parent="WrapContentStyle">
+        <item name="android:layout_marginLeft">@dimen/dimen_16dp</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body2</item>
+    </style>
+
+    <style name="MyButtonActionStyle" parent="WrapContentStyle">
+        <item name="android:layout_marginLeft">@dimen/dimen_8dp</item>
+        <item name="android:layout_marginTop">@dimen/dimen_16dp</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_16dp</item>
+    </style>
+
+    <style name="MyTextViewButtonStyle" parent="WrapContentStyle">
+        <item name="android:minWidth">@dimen/abc_action_button_min_width_material</item>
+        <item name="android:minHeight">@dimen/abc_action_button_min_height_material</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:padding">@dimen/dimen_8dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Button</item>
+    </style>
+
+    <style name="UnReadButtonStyle" parent="WrapContentStyle">
+        <item name="android:layout_gravity">end</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_8dp</item>
+        <item name="android:layout_marginEnd">@dimen/dimen_32dp</item>
+        <item name="android:layout_marginTop">@dimen/dimen_8dp</item>
+        <item name="android:paddingTop">@dimen/dimen_4dp</item>
+        <item name="android:paddingBottom">@dimen/dimen_4dp</item>
+        <item name="android:paddingStart">@dimen/dimen_4dp</item>
+        <item name="android:paddingEnd">@dimen/dimen_8dp</item>
+        <item name="android:drawablePadding">@dimen/dimen_4dp</item>
+        <item name="android:background">@drawable/un_read_button_selector</item>
+        <item name="android:drawableStart">@drawable/ic_notifications_white_24dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">@string/un_read_notification</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+</resources>

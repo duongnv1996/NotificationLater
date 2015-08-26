@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/FullSizeStyle"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin"
+    tools:context="com.kimcy929.notificationlater.NotificationDetailActivity">
+
+    <LinearLayout
+        style="@style/FullWidthStyle"
+        android:layout_marginBottom="@dimen/dimen_16dp"
+        android:layout_marginLeft="@dimen/dimen_8dp"
+        android:layout_marginRight="@dimen/dimen_8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <customview.TextViewCustomFont
+            android:id="@+id/alphabetIcon"
+            style="@style/WrapContentStyle"
+            android:background="@drawable/circle_alphabet_background"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_24sp" />
+
+        <customview.TextViewCustomFont
+            android:id="@+id/txtAppName"
+            style="@style/WrapContentStyle"
+            android:layout_marginStart="@dimen/dimen_16dp"
+            android:text="Facebook"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+    </LinearLayout>
+
+    <ScrollView
+        style="@style/FullWidthStyle"
+        android:layout_width="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            style="@style/FullWidthStyle"
+            android:layout_marginLeft="@dimen/dimen_8dp"
+            android:layout_marginRight="@dimen/dimen_8dp"
+            android:orientation="vertical">
+
+            <customview.TextViewCustomFont
+                android:id="@+id/txtPostTime"
+                style="@style/WrapContentStyle"
+                android:gravity="right"
+                android:text="@string/date" />
+
+            <customview.TextViewCustomFont
+                android:id="@+id/txtNtContentTitle"
+                style="@style/WrapContentStyle"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:text="@string/title"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+
+            <customview.TextViewCustomFont
+                android:id="@+id/txtNtContentText"
+                style="@style/WrapContentStyle"
+                android:layout_marginTop="@dimen/dimen_8dp"
+                android:text="@string/content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+    </ScrollView>
+
+    <com.kimcy929.notificationlater.ForegroundLinearLayout
+        android:id="@+id/btnLaunchApp"
+        style="@style/MyButtonActionStyle"
+        android:foreground="@drawable/button_dark_selector">
+        <TextView
+            style="@style/MyTextViewButtonStyle"
+            android:text="@string/btn_go_to_app" />
+    </com.kimcy929.notificationlater.ForegroundLinearLayout>
+
+</LinearLayout>

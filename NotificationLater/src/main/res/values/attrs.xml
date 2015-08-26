@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TextViewCustomFont">
+        <attr name="font_name" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="ForegroundLinearLayout">
+        <attr name="android:foreground" />
+        <attr name="android:foregroundInsidePadding" />
+        <attr name="android:foregroundGravity" />
+    </declare-styleable>
+
+    <declare-styleable name="TintImageView">
+        <attr name="tintColor" format="color" />
+    </declare-styleable>
+
+</resources>

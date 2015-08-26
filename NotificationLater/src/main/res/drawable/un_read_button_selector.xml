@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/button_material_light" android:state_pressed="true" />
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/dimen_2dp" />
+            <solid android:color="@color/myAccentColor" />
+        </shape>
+    </item>
+</selector>

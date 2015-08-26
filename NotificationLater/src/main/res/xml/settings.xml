@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/notification_setting">
+        <CheckBoxPreference
+            android:key="@string/key_cbHideAllNotification"
+            android:summary="@string/hide_all_notification_summary"
+            android:title="@string/hide_all_notification_title"
+            android:defaultValue="false"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/user_interface_setting">
+        <ListPreference
+            android:entries="@array/alphabetOptionEntries"
+            android:entryValues="@array/alphabetOptionValues"
+            android:defaultValue="1"
+            android:key="@string/key_alphabetOption"
+            android:summary="@string/how_to_show_app_icon"
+            android:title="@string/alphabet_title"
+            android:dialogTitle="@string/alphabet_title"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>
